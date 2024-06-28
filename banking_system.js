@@ -1,9 +1,4 @@
-class ValidationError extends Error {
-  constructor(param, message) {
-    super(message);
-    this.param = param;
-  }
-}
+import ValidationError from "./Utils/Error/validation_error.js";
 
 class BankAccount {
   #balance = 0;
